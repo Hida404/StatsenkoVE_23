@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>985</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTabWidget" name="Kurs">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1291</width>
+     <height>811</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="Add">
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Add&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <attribute name="title">
+     <string>Add</string>
+    </attribute>
+    <widget class="QTableWidget" name="UserAdd">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>110</y>
+       <width>231</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string>ФИО</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Доступ</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Зарплата</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Почта</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Данные</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QTableWidget" name="AddProject">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>440</y>
+       <width>231</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string>Название</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Работник</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Заказ</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Дата начала</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Данные</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QTableWidget" name="AddTask">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>20</y>
+       <width>256</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string>Статус</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Работник</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Название</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Номер проекта</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Описание</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Дата</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Данные</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="Add_User">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>270</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить данные об сотруднике</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Add_Task_Button">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>270</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить данные о рейсе</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Add_Project_Button">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>610</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить проект</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="AddAccess">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>120</y>
+       <width>171</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string>Доступ</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Данные</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="Add_Access">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>230</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить доступы</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="Add_Status">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>340</y>
+       <width>261</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string>Название</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>В архиве</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Доступ</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Время начала</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Время обновления</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Данные</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="Add_Status_Button">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>570</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить данные о статусах</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="Add_Working_Day">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>350</y>
+       <width>221</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string>Работник</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Начало</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Конец</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Перерыв</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Данные</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="Add_Working_Button">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>530</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить данные о работе</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Show">
+    <attribute name="title">
+     <string>Show</string>
+    </attribute>
+    <widget class="QPushButton" name="Show_Project_Button">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>210</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Данные об проектах</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Get_User_Button">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>460</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Данные о сотрудниках</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="Show_Status">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>260</y>
+       <width>301</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Название</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>В архиве</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Доступ</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Время начала</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Время обновления</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Данные</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="Show_Status_Button">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>500</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Данные о статусах</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Show_Task_Button">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>240</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Данные задачах</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="GetAccess">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>300</y>
+       <width>211</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Доступы</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="Show_Access">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>500</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Данные о доступах</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="GetUser">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>260</y>
+       <width>231</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>ФИО</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Доступ</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Зарплата</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Почта</string>
+      </property>
+     </row>
+    </widget>
+    <widget class="QTableWidget" name="ShowTask">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>10</y>
+       <width>256</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string>Статус</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Работник</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Название</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Номер проекта</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Описание</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Дата</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Данные</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QTableWidget" name="Show_Project">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>40</y>
+       <width>231</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string>Название</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Работник</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Заказ</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Дата начала</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Данные</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QTableWidget" name="Show_Working_Day">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>500</y>
+       <width>221</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string>Работник</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Начало</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Конец</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Перерыв</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Данные</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="Show_Working_Button">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>680</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить данные о работе</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Del">
+    <attribute name="title">
+     <string>Del</string>
+    </attribute>
+    <widget class="QPushButton" name="Del_User_Button">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>250</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Удалить данные об сотруднике</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>210</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Введите ID</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Line_del_user">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>230</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="Del_User">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>231</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>ФИО</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Доступ</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Зарплата</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Почта</string>
+      </property>
+     </row>
+    </widget>
+    <widget class="QTableWidget" name="Del_Access">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>20</y>
+       <width>211</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Доступы</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="Del_Access_Button">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>250</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Удалить данные о доступах</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Line_del_access">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>230</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>210</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Введите ID</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="Del_Status">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>20</y>
+       <width>301</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Название</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>В архиве</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Доступ</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Время начала</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Время обновления</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Данные</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLineEdit" name="Line_del_status">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>270</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>250</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Введите ID</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Del_Status_Button">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>290</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Удалить данные о статусе</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
